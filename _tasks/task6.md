@@ -18,7 +18,7 @@ importance: 7
 {% raw %}
 <script>
 function redirectToTask(taskId) {
-  window.location.href = '/tasks/' + taskId;
+  window.location.href = '{{ site.baseurl }}/tasks/' + taskId + '/';
 }
 </script>
 {% endraw %}
