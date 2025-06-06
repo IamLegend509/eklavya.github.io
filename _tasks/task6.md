@@ -1,17 +1,19 @@
 ---
 layout: page
 title: Task 6
-description: A lone path in the Force
+description: A lone Path in the FOrce
 importance: 7
 ---
 
 ## Choose any one
 
-**Points for any one Task: 100**
+**Points for any one Task: 150**
 
-<a href="#" onclick="redirectToTask('task6_1')">The Jedi CAD Academy</a>  
-<a href="#" onclick="redirectToTask('task6_2')">The Galactic Signal Jam</a>  
-<a href="#" onclick="redirectToTask('task6_3')">The HDL Order</a>
+[The Jedi CAD Academy](<javascript:redirectToTask('task6_1')>)
+
+[The Galactic Signal Jam](<javascript:redirectToTask('task6_2')>)
+
+[The HDL Order](<javascript:redirectToTask('task6_3')>)
 
 <script>
 function redirectToTask(taskId) {
