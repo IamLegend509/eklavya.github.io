@@ -18,6 +18,6 @@ importance: 7
 <script>
 var baseUrl = "{{ site.baseurl }}";
 function redirectToTask(taskId) {
-  window.location.href = baseUrl + "/tasks/" + taskId + "/";
+  window.location.href = baseUrl + "/subtasks/" + taskId + "/";
 }
 </script>

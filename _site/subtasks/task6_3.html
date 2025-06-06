@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>The Galactic Signal Jam | Eklavya 2025  </title>
+    <title>The HDL Order | Eklavya 2025  </title>
     <meta name="author" content="Eklavya 2025  ">
     <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 ">
@@ -39,7 +39,7 @@
     <link rel="shortcut icon" href="/assets/img/favicon.ico">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="http://localhost:4000/tasks/task6_2">
+    <link rel="canonical" href="http://localhost:4000/subtasks/task6_3">
 
     <!-- Dark Mode -->
     
@@ -136,70 +136,123 @@
         <div class="post table-borderless">
 
           <header class="post-header">
-            <h1 class="post-title">The Galactic Signal Jam</h1>
+            <h1 class="post-title">The HDL Order</h1>
             <p class="post-description"></p>
           </header>
 
           <article>
-            <h2 id="holoboard-mission-brief">Holoboard Mission Brief</h2>
+            <p>The time has come, young Padawan. Under the watchful eye of the Jedi Council of Digital Design, you are summoned to construct a module of power and precision — a <strong>2×2 Matrix Multiplier</strong>, forged in the language of Verilog. To complete this mission, you must strike a balance between <strong>timing</strong>, <strong>resource usage</strong>, and <strong>logic efficiency</strong>. The fate of the Rebellion may rest on your silicon.</p>
 
-<p>Design and assemble a PCB fit for the Rebel Alliance’s signal command unit — engineered using KiCad.</p>
+<hr>
 
-<h3 id="the-mission-objective">The Mission Objective:</h3>
+<h2 id="mission-briefing">Mission Briefing</h2>
 
-<p>Craft a Holoboard (<strong>PCB</strong>) that performs the following core functions within the realm of analog circuitry:</p>
+<h3 id="objective">Objective:</h3>
+<p>Design a Verilog module that performs <strong>2x2 matrix multiplication</strong> under the following conditions:</p>
 
+<h4 id="specifications">Specifications:</h4>
 <ul>
   <li>
-<strong>Bandpass Filter Module:</strong> Filters transmissions between <strong>100 Hz and 500 Hz</strong> — allowing only the desired frequencies to pass through the Force-field.</li>
+<strong>Input:</strong> Two 2×2 matrices <code class="language-plaintext highlighter-rouge">A</code> and <code class="language-plaintext highlighter-rouge">B</code>, with each element as an <strong>8-bit signed integer</strong>
+</li>
   <li>
-<strong>Amplification Core:</strong> Amplifies incoming signals with a total gain factor of <strong>6x</strong> — boosting weak transmissions from outer sectors.</li>
-  <li>
-<strong>Threshold Detection Unit (Comparator):</strong> Identifies signals exceeding <strong>6V</strong> and activates a <strong>Status Beacon (LED)</strong> — signaling the presence of high-power waves.</li>
+<strong>Output:</strong> A 2×2 matrix <code class="language-plaintext highlighter-rouge">C</code>, which is the product <code class="language-plaintext highlighter-rouge">C = A × B</code>
+</li>
+</ul>
+
+<h4 id="optimization-goals">Optimization Goals:</h4>
+<ul>
+  <li>Minimize the number of clock cycles required</li>
+  <li>Use hardware resources efficiently</li>
+  <li>Minimize overall hardware logic</li>
 </ul>
 
 <hr>
 
-<h3 id="system-requirements-from-the-jedi-council">System Requirements from the Jedi Council:</h3>
+<h2 id="the-formula-of-multiplicative-force">The Formula of Multiplicative Force</h2>
 
-<ul>
-  <li>
-<strong>Input Signal Source:</strong> A sine wave from a rebel transmitter, with a peak amplitude of <strong>up to 2V</strong>. Provide a <strong>screw terminal</strong> labeled <code class="language-plaintext highlighter-rouge">"INPUT"</code> for mission-critical interfacing.</li>
-  <li>
-<strong>Power Protocols:</strong> Deploy <strong>±12V power rails</strong> through dedicated <strong>screw terminals</strong> — one for the filter, another for the comparator. Keep their paths clear of interference.</li>
-  <li>
-<strong>Board Constraints:</strong> The holoboard must fit within the confines of <strong>100mm × 80mm</strong> — suitable for starfighter compartments.</li>
-  <li>
-<strong>Assembly Considerations:</strong> All components must be <strong>suitable for hand-soldering by field engineers</strong> (no droid-assisted assembly required).</li>
-  <li>
-<strong>Labeling &amp; Grounding:</strong> Ensure all signals are <strong>clearly marked via silkscreen</strong>, and grounding follows <strong>Imperial safety protocols</strong> — preventing interference from the Dark Side (noise).</li>
-</ul>
+<p>Let:
+\(A = \begin{vmatrix}
+a_{11} &amp; a_{12} \\
+a_{21} &amp; a_{22}
+\end{vmatrix}
+\quad
+B = \begin{vmatrix}
+b_{11} &amp; b_{12} \\
+b_{21} &amp; b_{22}
+\end{vmatrix}\)</p>
 
-<hr>
-
-<h3 id="hint-1-resources">Hint 1 (Resources)</h3>
-
-<p>To aid in your design journey, consult the following data scrolls and holograms from the Rebel Archives:</p>
-
-<ul>
-  <li><a href="https://youtube.com/playlist?list=PLEBQazB0HUyR24ckSZ5u05TZHV9khgA1O&amp;si=jV_f-F7LT0rPMgh-" rel="external nofollow noopener" target="_blank">PCB Design Tutorial (YouTube Playlist)</a></li>
-  <li><a href="https://www.youtube.com/watch?v=9D06x5lF9sI" rel="external nofollow noopener" target="_blank">Operational Amplifier: Inverting Op Amp and The Concept of Virtual Ground in Op Amp</a></li>
-  <li><a href="https://www.youtube.com/watch?v=C_2_zZr6gf0" rel="external nofollow noopener" target="_blank">Operational Amplifier: Non-Inverting Op-Amp and Op-Amp as Buffer (Voltage Follower)</a></li>
-  <li><a href="https://www.youtube.com/watch?v=9OqI2Bz7WW8" rel="external nofollow noopener" target="_blank">Active Low Pass Filter and Active High Pass Filter Explained</a></li>
-</ul>
-
-<p>You are also encouraged to browse the holonet (internet) and consult other resources to deepen your understanding of filters and come up with the most efficient circuit designs.</p>
+<p>Then:
+\(C = A \times B = \begin{vmatrix}
+a_{11}b_{11} + a_{12}b_{21} &amp; a_{11}b_{12} + a_{12}b_{22} \\
+a_{21}b_{11} + a_{22}b_{21} &amp; a_{21}b_{12} + a_{22}b_{22}
+\end{vmatrix}\)</p>
 
 <hr>
 
-<h3 id="high-councils-design-commandment">High Council’s Design Commandment</h3>
+<h2 id="task-execution-steps">Task Execution Steps</h2>
 
-<p><strong>The simpler the routes, the more the marks — and the smaller the PCB, the more the marks.</strong><br>
-Let this guiding principle shape your layout, your traces, and your component placement.</p>
+<ol>
+  <li>
+    <p><strong>Access the secret Jedi datapad:</strong><br>
+<a href="https://drive.google.com/drive/folders/1RF4yw-MRR_ZKoP1AoHSOtmx7msi20Z3P" rel="external nofollow noopener" target="_blank">Testbench File – Google Drive</a></p>
+  </li>
+  <li>
+    <p><strong>Launch the Holoterminal:</strong><br>
+Navigate to <a href="https://www.edaplayground.com" rel="external nofollow noopener" target="_blank">EDAPlayground</a></p>
+  </li>
+  <li>
+<strong>Testbench Deployment:</strong>
+    <ul>
+      <li>Paste the content from the Google Drive link into the <code class="language-plaintext highlighter-rouge">testbench.sv</code> section (left panel)</li>
+    </ul>
+  </li>
+  <li>
+<strong>Design Deployment:</strong>
+    <ul>
+      <li>Write your Verilog module in the <code class="language-plaintext highlighter-rouge">design.sv</code> section (right panel)</li>
+    </ul>
+  </li>
+  <li>
+<strong>Simulate the Force:</strong>
+    <ul>
+      <li>Click <strong>Save</strong> then <strong>Run</strong>
+</li>
+      <li>If the console outputs:
+        <div class="language-plaintext highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>   ===========================================================
+   Test Summary:
+   Total Tests:                6
+   Errors:                   0
+   *** ALL TESTS PASSED! ***
+   ===========================================================
+   testbench.sv:116 : $finish called at 425000 (1ps)
+</code></pre></div>        </div>
+        <p>…then your circuit has awakened.</p>
+      </li>
+    </ul>
+  </li>
+</ol>
 
 <hr>
 
-<p>Let the electrons flow through your design, young Padawan. And remember — <strong>with great layout comes great signal integrity</strong>.</p>
+<h2 id="final-jedi-instructions">Final Jedi Instructions</h2>
+
+<blockquote>
+  <p>Your design must be optimized for both <strong>timing</strong> and <strong>logic</strong>.
+This means:</p>
+  <ul>
+    <li>Use the <strong>least amount of hardware possible</strong>
+</li>
+    <li>Implement logic in the <strong>most pipelined</strong> and efficient manner</li>
+  </ul>
+</blockquote>
+
+<hr>
+
+<p><strong>The Force binds all logic gates together. Let your HDL flow freely, but precisely.</strong></p>
+
+<p><em>May the clock edge rise in your favor.</em></p>
 
           </article>
 

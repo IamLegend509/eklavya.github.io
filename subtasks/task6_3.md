@@ -1,7 +1,7 @@
 ---
 layout: page
 title: The HDL Order
-permalink: /tasks/task6_3
+permalink: /subtasks/task6_3
 importance: 4
 category: Digital Design
 ---
