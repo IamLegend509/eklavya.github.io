@@ -15,10 +15,9 @@ importance: 7
 <br>
 <a href="#" onclick="event.preventDefault(); redirectToTask('task6_3')">The HDL Order</a>
 
-{% raw %}
 <script>
+var baseUrl = "{{ site.baseurl }}";
 function redirectToTask(taskId) {
-  window.location.href = "{{ site.baseurl | append: '/tasks/' }}" + taskId;
+  window.location.href = baseUrl + "/tasks/" + taskId + "/";
 }
 </script>
-{% endraw %}
