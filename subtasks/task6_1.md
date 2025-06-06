@@ -2,7 +2,7 @@
 layout: page
 title: The Jedi CAD Academy
 importance: 5
-permalink: /subtasks/task6_1
+permalink: /tasks/task6_1
 Category: CAD
 ---
 ## Mission Brief

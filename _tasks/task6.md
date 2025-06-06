@@ -18,6 +18,11 @@ importance: 7
 <script>
 var baseUrl = "{{ site.baseurl }}";
 function redirectToTask(taskId) {
-  window.location.href = baseUrl + "/subtasks/" + taskId + "/";
+  // Remove double slashes and ensure proper path
+  var url = (baseUrl + "/tasks/" + taskId + "/").replace(/\/+/g, '/');
+  if (!baseUrl) {
+    url = "/tasks/" + taskId + "/";
+  }
+  window.location.href = url;
 }
 </script>
