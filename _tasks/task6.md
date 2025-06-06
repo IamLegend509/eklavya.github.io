@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Task 6
-description: A lone Path in the FOrce
+description: A lone Path in the Force
 importance: 7
 ---
 
@@ -18,7 +18,7 @@ importance: 7
 {% raw %}
 <script>
 function redirectToTask(taskId) {
-  window.location.href = '{{ site.baseurl }}/tasks/' + taskId + '/';
+  window.location.href = "{{ site.baseurl | append: '/tasks/' }}" + taskId;
 }
 </script>
 {% endraw %}
