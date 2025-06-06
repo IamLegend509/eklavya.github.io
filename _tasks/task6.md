@@ -15,6 +15,6 @@ importance: 7
 
 <script>
 function redirectToTask(taskId) {
-  window.location.href = '/subtasks/' + taskId;
+  window.location.href = '/tasks/' + taskId;
 }
 </script>
