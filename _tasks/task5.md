@@ -2,7 +2,6 @@
 layout: page
 title: Task 5
 description: Droid Arm Trials in the Holochamber
-img: assets/img/stars.jpg
 importance: 6
 category: ROS2 and Gazebo
 ---

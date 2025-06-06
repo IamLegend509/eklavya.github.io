@@ -3,9 +3,8 @@ layout: page
 title: The Jedi CAD Academy
 importance: 5
 permalink: /tasks/task6_1
+Category: CAD
 ---
-# Jedi CAD Academy
-
 ## Mission Brief
 
 Your mission, young Padawan, is to **design a compound gear train in Onshape** that achieves an exact **300:1 reduction ratio** under the strict watch of the Jedi Council. Precision, patience, and understanding of the mechanical Force will be key.

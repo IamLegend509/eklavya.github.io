@@ -6,8 +6,6 @@ importance: 4
 category: Digital Design
 ---
 
-# The HDL Order
-
 The time has come, young Padawan. Under the watchful eye of the Jedi Council of Digital Design, you are summoned to construct a module of power and precision — a **2×2 Matrix Multiplier**, forged in the language of Verilog. To complete this mission, you must strike a balance between **timing**, **resource usage**, and **logic efficiency**. The fate of the Rebellion may rest on your silicon.
 
 ---
@@ -71,12 +69,12 @@ $$
    - Click **Save** then **Run**
    - If the console outputs:
      ```
-        ====================================================================================================
+        ===========================================================
         Test Summary:
-        Total Tests:                                            6
-        Errors:                                              0
+        Total Tests:                6
+        Errors:                   0
         *** ALL TESTS PASSED! ***
-        ====================================================================================================
+        ===========================================================
         testbench.sv:116 : $finish called at 425000 (1ps)
      ```
      ...then your circuit has awakened.

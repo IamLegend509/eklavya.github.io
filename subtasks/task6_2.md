@@ -3,6 +3,7 @@ layout: page
 title: The Galactic Signal Jam
 importance: 5
 permalink: /tasks/task6_2
+Category: PCB Designing
 ---
 
 ## Holoboard Mission Brief

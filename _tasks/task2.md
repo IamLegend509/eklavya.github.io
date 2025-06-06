@@ -2,9 +2,8 @@
 layout: page
 title: Task 2
 description: Rebel Blueprints
-img: assets/img/stars.jpg
 importance: 3
-category: Computer Vision
+category: Electronics (Bill Of Materials)
 ---
 
 **Points for this task: 25**

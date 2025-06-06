@@ -2,9 +2,8 @@
 layout: page
 title: Task 1
 description: The Binary Gauntlet
-img: assets/img/maze.png
 importance: 2
-Categiry: Computer Vision
+Category: Computer Vision
 ---
 
 **Points for this task: 50**

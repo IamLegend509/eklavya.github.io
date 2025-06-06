@@ -2,8 +2,8 @@
 layout: page
 title: Task 3
 description: The Descent protocol
-img: assets/img/Turtle.jpeg
 importance: 4
+Category: Mathematics
 ---
 
 **Points for this task: 25**
