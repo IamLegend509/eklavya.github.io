@@ -9,12 +9,9 @@ importance: 7
 
 **Points for any one Task: 100**
 
-<a href="#" onclick="redirectToTask('task6_1')">The Jedi CAD Academy</a>  
-<a href="#" onclick="redirectToTask('task6_2')">The Galactic Signal Jam</a>  
-<a href="#" onclick="redirectToTask('task6_3')">The HDL Order</a>
+*Note: Each task is in a sub-directory under `/tasks/`.*
 
-<script>
-function redirectToTask(taskId) {
-  window.location.href = '/tasks/' + taskId;
-}
-</script>
+- [The Jedi CAD Academy](/subtasks/task6_1)  
+- [The Galactic Signal Jam](/subtasks/task6_2)  
+- [The HDL Order](/subtasks/task6_3)  
+
